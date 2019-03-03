@@ -23,3 +23,10 @@ print (taxi)
 
 # axis = 0 is for columns and axis = 1 is for rows
 taxi_column_means = taxi.mean(axis=0)
+
+#Sorting using Numpy
+sorted_order = np.argsort(taxi[:,15])
+
+taxi_sorted = taxi[sorted_order]
+
+print(taxi_sorted)
