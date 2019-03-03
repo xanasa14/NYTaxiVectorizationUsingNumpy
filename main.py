@@ -20,3 +20,6 @@ for row in taxi_list:
 
 taxi = np.array(converted_taxi_list)
 print (taxi)
+
+# axis = 0 is for columns and axis = 1 is for rows
+taxi_column_means = taxi.mean(axis=0)
