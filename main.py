@@ -30,3 +30,20 @@ sorted_order = np.argsort(taxi[:,15])
 taxi_sorted = taxi[sorted_order]
 
 print(taxi_sorted)
+
+
+#To read data from file and skip the header(first row) using Numpy
+#taxi = np.genfromtxt('nyc_taxis.csv', delimiter=',', skip_header=1)
+
+
+#creating a copy of our taxi array
+#taxi_modified = taxi.copy()
+# changing values from the data that i just copied 
+'''
+Rows , Columns
+taxi_modified[28214,5] = 1
+
+taxi_modified[:,0] = 16
+Here, i replaced these 2 values 1800 and 1801 by the mean of the column 
+taxi_modified [1800:1802,7] = taxi_modified[:,7].mean()
+'''
